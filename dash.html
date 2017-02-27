@@ -463,23 +463,13 @@ transform:rotate(360deg)
 	left:50%;
 	z-index:4
 }
-body {
-	background: #fff;
-}
-#container {
-	width: 940px;
-	margin: 0 auto;
-}
- @media only screen and (max-width: 768px) {
- #container {
- width: 90%;
- margin: 0 auto;
-}
-}
 </style>
-<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/easyResponsiveTabs.js"></script>
+<!-- External CSS files for sidebar-->
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Custom CSS -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<!-- END OF external CSS files for sidebar-->
 </head>
 <body data-gr-c-s-loaded="true">
 <div id="ajaxLoading"></div>
@@ -502,57 +492,57 @@ body {
   }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="baseWindow">
-<!-- Adding a container div so that we can easily hide all nav items with javascript -->
-<div id="navbar-container">
-  <!-- Static navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse noprint" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="https://apps.dashplatform.com/beta/dash/index.php"><span class="glyphicon glyphicon-home visible-xs-inline"></span> <span class="hidden-xs">DASH<span></span></span></a> </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a></li>
-          <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=schedule">Schedule</a></li>
-          <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=message">Messages</a></li>
-          <li class="dropdown"> <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=stats">Stats</a> </li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=leagues">Leagues</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header"></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=help">Locations</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=support">Contact Us</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=benefits">Member Benefits</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown"> <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#" class="dropdown-toggle" data-toggle="dropdown">Anthony <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="visible-xs visible-sm visible-md"><a href="https://apps.dashplatform.com/beta/dash/index.php?Action=Customer/memberCard&amp;company=arenasports">Member Card</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=user_edit">Profile</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=stats">Stats</a> </li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=benefits">Member Benefits</a></li>
-              <li class="divider"></li>
-              <li class="switch-account-button"><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Auth/login&amp;switchAccount=1">Switch Account</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Auth/logout">Sign Out</a></li>
-            </ul>
-          </li>
-        </ul>
+  <!-- Adding a container div so that we can easily hide all nav items with javascript -->
+  <div id="navbar-container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse noprint" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="https://apps.dashplatform.com/beta/dash/index.php"><span class="glyphicon glyphicon-home visible-xs-inline"></span> <span class="hidden-xs">DASH<span></span></span></a> </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a></li>
+            <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=schedule">Schedule</a></li>
+            <li class=""><a href="https://apps.dashplatform.com/beta/dash/index.php?action=message">Messages</a></li>
+            <li class="dropdown"> <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=stats">Stats</a> </li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=leagues">Leagues</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=help">Locations</a></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=support">Contact Us</a></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=benefits">Member Benefits</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"> <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#" class="dropdown-toggle" data-toggle="dropdown">Anthony <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="visible-xs visible-sm visible-md"><a href="https://apps.dashplatform.com/beta/dash/index.php?Action=Customer/memberCard&amp;company=arenasports">Member Card</a></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=user_edit">Profile</a></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=stats">Stats</a> </li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=benefits">Member Benefits</a></li>
+                <li class="divider"></li>
+                <li class="switch-account-button"><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Auth/login&amp;switchAccount=1">Switch Account</a></li>
+                <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Auth/logout">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
       </div>
-      <!--/.navbar-collapse -->
+    </nav>
+    <div style="height: 50px;" class="noprint">
+      <!-- spacer so if top menu is shown it doesn't overlap with content below -->
     </div>
-  </nav>
-  <div style="height: 65px;" class="noprint">
-    <!-- spacer so if top menu is shown it doesn't overlap with content below -->
   </div>
-</div>
-<!-- /#navbar-container -->
-<div id="mainWindow" class="container">
-<div class="container" id="cartDIV">
-  <!-- shopping cart javascript -->
-  <script type="text/javascript">
+  <!-- /#navbar-container -->
+  <div id="mainWindow" class="container">
+    <div class="container" id="cartDIV">
+      <!-- shopping cart javascript -->
+      <script type="text/javascript">
 
     /**
        * Adds a product to the shopping cart
@@ -762,193 +752,193 @@ body {
       });
     //-->
     </script>
-  <script type="text/javascript">
+      <script type="text/javascript">
             jQuery('.cashRegister-cartWrapper .table tr:not(.dropdownCart), .sitcart_us_area').show();
       $j('.hideCart').text('Hide');
           </script>
-  <div id="SIT_Cart"> </div>
-</div>
-<div class="modal fade" id="customerEditModule">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title title-edit">Edit Information for <span></span></h4>
-        <h4 class="modal-title title-addChild">Add child for <span></span></h4>
-      </div>
-      <div class="modal-body">
-        <div class="modal-messageOutput"></div>
-        <form class="primary-form">
-          <input type="hidden" name="customerID">
-          <input type="hidden" name="addingNewChild">
-          <div class="row">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#profile" data-toggle="tab">Profile</a></li>
-              <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#contactSettings" data-toggle="tab">Contact Settings</a></li>
-            </ul>
-            <br>
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div class="tab-pane active" id="profile">
-                <div class="form-group col-sm-12 useMyContactInfoInput">
-                  <div class="checkbox">
-                    <label for="useMyContactInfo">
-                      <input type="hidden" name="useMyContactInfo" value="0">
-                      <input type="checkbox" name="useMyContactInfo" id="useMyContactInfo" value="1">
-                      Same contact information as parent </label>
-                  </div>
-                </div>
-                <div class="form-group col-sm-6">
-                  <label>First Name</label>
-                  <input type="text" class="form-control" name="firstName">
-                </div>
-                <div class="form-group col-sm-6">
-                  <label>Last Name</label>
-                  <input type="text" class="form-control" name="lastName">
-                </div>
-                <div class="form-group col-sm-3">
-                  <label>Gender</label>
-                  <select class="form-control" name="sex">
-                    <option value="m">Male</option>
-                    <option value="f">Female</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3">
-                  <label>Date of Birth</label>
-                  <input type="text" class="form-control" name="dob" placeholder="mm/dd/yyyy">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Email</label>
-                  <input type="text" class="form-control" name="email">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Address Line 1</label>
-                  <input type="text" class="form-control" name="address">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Address Line 2</label>
-                  <input type="text" class="form-control" name="address2">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>City</label>
-                  <input type="text" class="form-control" name="city">
-                </div>
-                <div class="form-group col-sm-2 contactInfo">
-                  <label>State</label>
-                  <input type="text" class="form-control" name="state">
-                </div>
-                <div class="form-group col-sm-4 contactInfo">
-                  <label>Zip</label>
-                  <input type="text" class="form-control" name="zip">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Day Phone</label>
-                  <input type="text" class="form-control" name="phoneDay">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Night Phone</label>
-                  <input type="text" class="form-control" name="phoneNight">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Mobile Phone</label>
-                  <input type="text" class="form-control" name="phoneMobile">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Emergency Phone</label>
-                  <input type="text" class="form-control" name="phoneEmergency">
-                </div>
-                <div class="form-group col-sm-6 contactInfo">
-                  <label>Mobile Carrier</label>
-                  <select id="mobileCarrier" class="form-control" style="" name="mobileCarrier">
-                    <option value="0">--Mobile Carrier--</option>
-                    <option value="Aliant">Aliant</option>
-                    <option value="Ameritech">Ameritech</option>
-                    <option value="ATT">AT&amp;T Wireless</option>
-                    <option value="BellCA">Bell Canada</option>
-                    <option value="Bellsouth">Bellsouth</option>
-                    <option value="Boost">Boost</option>
-                    <option value="CellularOne">CellularOne</option>
-                    <option value="Cricket">Cricket Wireless</option>
-                    <option value="EdgeWireless">Edge Wireless</option>
-                    <option value="Fido">Fido</option>
-                    <option value="GCI">General Communications</option>
-                    <option value="Koodo">Koodo</option>
-                    <option value="Metro PCS">Metro PCS</option>
-                    <option value="MatanuskaTA">MTA (Matanuska)</option>
-                    <option value="MTSMobility">MTS Mobility</option>
-                    <option value="SprintNextel">Nextel</option>
-                    <option value="nTelos">nTelos</option>
-                    <option value="Orange">Orange / O2</option>
-                    <option value="PresidentsChoice">President's Choice</option>
-                    <option value="Qwest">Qwest</option>
-                    <option value="RogersWireless">Rogers Wireless</option>
-                    <option value="SasktelMobility">Sasktel Mobility</option>
-                    <option value="Sprint">Sprint</option>
-                    <option value="T-Mobile">T-Mobile</option>
-                    <option value="Telus">Telus Mobility</option>
-                    <option value="USCellular">US Cellular</option>
-                    <option value="Verizon">Verizon</option>
-                    <option value="VirginMobile">Virgin Mobile</option>
-                    <option value="VirginMobileCA">Virgin Mobile CA</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-6" id="resetPasswordControl">
-                  <label>&nbsp;</label>
-                  <a class="form-control btn btn-warning" href="https://apps.dashplatform.com/beta/dash/index.php?action=forgotpw">Reset Password</a> </div>
-              </div>
-              <!-- /.tab-pane -->
-              <div class="tab-pane" id="contactSettings">
-                <div class="form-group col-sm-12"> <b>Contact Settings</b>
-                  <div class="radio">
-                    <label for="emailRemindersOKTrue">
-                      <input type="radio" id="emailRemindersOKTrue" name="emailRemindersOK" value="1">
-                      Send me email reminders about scheduled events </label>
-                  </div>
-                  <div class="radio">
-                    <label for="emailRemindersOKFalse">
-                      <input type="radio" id="emailRemindersOKFalse" name="emailRemindersOK" value="0">
-                      Please don't send any email to me<br>
-                      <em>(Includes: reminders, receipts, special notices and promotional emails)</em> </label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="sendSMSOK">
-                      <input type="hidden" value="0" name="sendSMSOK">
-                      <input type="checkbox" value="1" id="sendSMSOK" name="sendSMSOK">
-                      Send me SMS (mobile phone text message) event reminders and essential notices<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <em>your mobile carrier may charge you for text messages</em> - </label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="showContactInfoOK">
-                      <input type="hidden" value="0" name="showContactInfoOK">
-                      <input type="checkbox" value="1" id="showContactInfoOK" name="showContactInfoOK">
-                      Show my phone and email information to others on my roster </label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="showAddressOK">
-                      <input type="hidden" value="0" name="showAddressOK">
-                      <input type="checkbox" value="1" id="showAddressOK" name="showAddressOK">
-                      Show my address information to others on my roster </label>
-                  </div>
-                </div>
-              </div>
-              <!-- /.tab-pane -->
-            </div>
-          </div>
-          <!-- /.row -->
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary buttonSaveChanges">Save changes</button>
-      </div>
+      <div id="SIT_Cart"> </div>
     </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
-<script type="text/javascript">
+    <div class="modal fade" id="customerEditModule">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title title-edit">Edit Information for <span></span></h4>
+            <h4 class="modal-title title-addChild">Add child for <span></span></h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal-messageOutput"></div>
+            <form class="primary-form">
+              <input type="hidden" name="customerID">
+              <input type="hidden" name="addingNewChild">
+              <div class="row">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#profile" data-toggle="tab">Profile</a></li>
+                  <li><a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#contactSettings" data-toggle="tab">Contact Settings</a></li>
+                </ul>
+                <br>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="profile">
+                    <div class="form-group col-sm-12 useMyContactInfoInput">
+                      <div class="checkbox">
+                        <label for="useMyContactInfo">
+                          <input type="hidden" name="useMyContactInfo" value="0">
+                          <input type="checkbox" name="useMyContactInfo" id="useMyContactInfo" value="1">
+                          Same contact information as parent </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label>First Name</label>
+                      <input type="text" class="form-control" name="firstName">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label>Last Name</label>
+                      <input type="text" class="form-control" name="lastName">
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label>Gender</label>
+                      <select class="form-control" name="sex">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label>Date of Birth</label>
+                      <input type="text" class="form-control" name="dob" placeholder="mm/dd/yyyy">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Email</label>
+                      <input type="text" class="form-control" name="email">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Address Line 1</label>
+                      <input type="text" class="form-control" name="address">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Address Line 2</label>
+                      <input type="text" class="form-control" name="address2">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>City</label>
+                      <input type="text" class="form-control" name="city">
+                    </div>
+                    <div class="form-group col-sm-2 contactInfo">
+                      <label>State</label>
+                      <input type="text" class="form-control" name="state">
+                    </div>
+                    <div class="form-group col-sm-4 contactInfo">
+                      <label>Zip</label>
+                      <input type="text" class="form-control" name="zip">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Day Phone</label>
+                      <input type="text" class="form-control" name="phoneDay">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Night Phone</label>
+                      <input type="text" class="form-control" name="phoneNight">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Mobile Phone</label>
+                      <input type="text" class="form-control" name="phoneMobile">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Emergency Phone</label>
+                      <input type="text" class="form-control" name="phoneEmergency">
+                    </div>
+                    <div class="form-group col-sm-6 contactInfo">
+                      <label>Mobile Carrier</label>
+                      <select id="mobileCarrier" class="form-control" style="" name="mobileCarrier">
+                        <option value="0">--Mobile Carrier--</option>
+                        <option value="Aliant">Aliant</option>
+                        <option value="Ameritech">Ameritech</option>
+                        <option value="ATT">AT&amp;T Wireless</option>
+                        <option value="BellCA">Bell Canada</option>
+                        <option value="Bellsouth">Bellsouth</option>
+                        <option value="Boost">Boost</option>
+                        <option value="CellularOne">CellularOne</option>
+                        <option value="Cricket">Cricket Wireless</option>
+                        <option value="EdgeWireless">Edge Wireless</option>
+                        <option value="Fido">Fido</option>
+                        <option value="GCI">General Communications</option>
+                        <option value="Koodo">Koodo</option>
+                        <option value="Metro PCS">Metro PCS</option>
+                        <option value="MatanuskaTA">MTA (Matanuska)</option>
+                        <option value="MTSMobility">MTS Mobility</option>
+                        <option value="SprintNextel">Nextel</option>
+                        <option value="nTelos">nTelos</option>
+                        <option value="Orange">Orange / O2</option>
+                        <option value="PresidentsChoice">President's Choice</option>
+                        <option value="Qwest">Qwest</option>
+                        <option value="RogersWireless">Rogers Wireless</option>
+                        <option value="SasktelMobility">Sasktel Mobility</option>
+                        <option value="Sprint">Sprint</option>
+                        <option value="T-Mobile">T-Mobile</option>
+                        <option value="Telus">Telus Mobility</option>
+                        <option value="USCellular">US Cellular</option>
+                        <option value="Verizon">Verizon</option>
+                        <option value="VirginMobile">Virgin Mobile</option>
+                        <option value="VirginMobileCA">Virgin Mobile CA</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6" id="resetPasswordControl">
+                      <label>&nbsp;</label>
+                      <a class="form-control btn btn-warning" href="https://apps.dashplatform.com/beta/dash/index.php?action=forgotpw">Reset Password</a> </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="contactSettings">
+                    <div class="form-group col-sm-12"> <b>Contact Settings</b>
+                      <div class="radio">
+                        <label for="emailRemindersOKTrue">
+                          <input type="radio" id="emailRemindersOKTrue" name="emailRemindersOK" value="1">
+                          Send me email reminders about scheduled events </label>
+                      </div>
+                      <div class="radio">
+                        <label for="emailRemindersOKFalse">
+                          <input type="radio" id="emailRemindersOKFalse" name="emailRemindersOK" value="0">
+                          Please don't send any email to me<br>
+                          <em>(Includes: reminders, receipts, special notices and promotional emails)</em> </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="sendSMSOK">
+                          <input type="hidden" value="0" name="sendSMSOK">
+                          <input type="checkbox" value="1" id="sendSMSOK" name="sendSMSOK">
+                          Send me SMS (mobile phone text message) event reminders and essential notices<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <em>your mobile carrier may charge you for text messages</em> - </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="showContactInfoOK">
+                          <input type="hidden" value="0" name="showContactInfoOK">
+                          <input type="checkbox" value="1" id="showContactInfoOK" name="showContactInfoOK">
+                          Show my phone and email information to others on my roster </label>
+                      </div>
+                      <div class="checkbox">
+                        <label for="showAddressOK">
+                          <input type="hidden" value="0" name="showAddressOK">
+                          <input type="checkbox" value="1" id="showAddressOK" name="showAddressOK">
+                          Show my address information to others on my roster </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+              </div>
+              <!-- /.row -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary buttonSaveChanges">Save changes</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script type="text/javascript">
         
         /************************************************
          * JS Begin CustomerEditModule Class Definition *
@@ -1126,7 +1116,7 @@ body {
          **********************************************/
         
       </script>
-<script type="text/javascript">
+    <script type="text/javascript">
   $j(function() {
 
     $j(".decline-team-invite").click(function(event) {
@@ -1152,7 +1142,7 @@ body {
     });
   });
 </script>
-<script type="text/javascript">
+    <script type="text/javascript">
 
   $j(document).ready(function(event){
     // Wire up 'Edit Profile' buttons for child profiles
@@ -1166,110 +1156,72 @@ body {
     });
   });
 </script>
-<!-- New interface start -- Shannon Leung -->
-<div id="container">
-  <div style="text-align:left">
-    <div style="display:inline-block; padding:10px;vertical-align:top"> <img class="img-thumbnail" style="margin-right: 30px; max-width: 90px;" src="./dash_files/24625.jpg">
-      <div>
-        <h5>Join Us On Facebook</h5>
-        <div class="fb-like fb_iframe_widget" data-ref="dash-platform" data-colorscheme="light" data-layout="button" data-action="like" data-show-faces="true" data-share="true" data-href="https://www.facebook.com/arenasports" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=328419437305840&amp;color_scheme=light&amp;container_width=360&amp;href=https%3A%2F%2Fwww.facebook.com%2Farenasports&amp;layout=button&amp;locale=en_US&amp;ref=dash-platform&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 96px; height: 20px;">
-          <iframe name="f3d870b43760edc" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./dash_files/like.html" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe>
-          </span></div>
-      </div>
-    </div>
-    <div style="display:inline-block;padding-top:5px;font-size:18px; ">
-      <div style="line-height:2; font-size:24px">Anthony Tippett <br>
-        Account Balance: <a href="https://apps.dashplatform.com/beta/dash/index.php?action=invoices">$10.24</a><br>
-      </div>
-    </div>
-  </div>
-  <br/>
-  <!--Horizontal Tab-->
-  <div id="parentHorizontalTab">
-    <ul class="resp-tabs-list hor_1">
-      <li>Account Information</li>
-      <li>Account Balance</li>
-      <li>Membership</li>
-      <li>Member</li>
-      <li>Subscribe</li>
-      <li>Pass</li>
-    </ul>
-    <div class="resp-tabs-container hor_1">
-      <div>
-        <div>
-          <h4>Anthony Tippett <small style="margin-left: 20px; color: #000;">123</small></h4>
-          <!-- Begin Parent List -->
-          <!-- End Parent List -->
-          15710 249th Ave Se<br>
-          Issaquah, WA 98027<br>
-          Day Phone: (425) 443-3152<br>
-          Email: <a href="mailto:atippett@gmail.com">atippett@gmail.com</a><br>
-          <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=user_edit&amp;company=arenasports">Update Information</a><br>
-          <br>
-          <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=benefits&amp;company=arenasports" class="btn btn-sm btn-small btn-info">See Member Benefits</a> </div>
-        <br>
-        <br>
-      </div>
-      <div>
-        <div>
-          <table>
-            <tbody>
-              <tr>
-                <td><h4> Account Balance <a href="https://apps.dashplatform.com/beta/dash/index.php?action=invoices">$10.24</a></h4></td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Anthony</td>
-                <td class="numeric">$10.24</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Elliot</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Wyatt</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">aw</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Aden</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Boo</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">todd</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Newwwer</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-              <tr>
-                <td style="padding-left: 20px">Ne</td>
-                <td class="numeric">$0.00</td>
-              </tr>
-            </tbody>
-          </table>
-          <br>
-          <input class="btn btn-default btn-sm btn-small" type="button" name="payBalanceButton" value="Pay Balance" onClick="location.href=&#39;?action=invoices&#39;">
-          <br>
+    <div class="row">
+      <div class="xcol-sm-8" id="homeIndexGroupList">
+        <div style="margin-top: -10px;" class="row visible-xs small-gutter">
+          <div class="col-xs-6"> <a class="btn btn-default btn-lg btn-block btn-sq" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+          <div class="col-xs-6"> <a class="btn btn-info btn-lg btn-block btn-sq" href="https://apps.dashplatform.com/beta/dash/index.php?action=schedule">My Schedules</a> </div>
         </div>
-        <br>
-        <br>
-      </div>
-      <div>
-        <div>
-          <h4>Memberships</h4>
-          <div style="margin:0px; padding-bottom: 7px;"> Family Membership <span style="color:red; font-weight:bold; padding-left:5px "> Expires:
-            Mar 18, 2020</span> <br>
-            <br>
-            <a class="btn btn-default btn-sm btn-small" href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home/index&amp;company=arenasports&amp;sitcart_action=add&amp;sitcart_prod=3178&amp;sitcart_customer=24625&amp;sitcart_memid=59320">Renew</a>
-            <script type="text/javascript">
+        <div class="row visible-xs small-gutter" style="margin-top: 6px">
+          <div class="col-xs-6"> <a class="btn btn-default btn-lg btn-block btn-sq" href="https://apps.dashplatform.com/beta/dash/index.php?Action=Customer/memberCard&amp;company=arenasports">Member Card</a> </div>
+          <div class="col-xs-6"> <a class="btn btn-danger btn-lg btn-block btn-sq" href="https://apps.dashplatform.com/beta/dash/index.php?action=benefits">Member Benefits</a> </div>
+        </div>
+        <!-- ============================================================================================================================================= -->
+        <!-- New Code start in here -->
+        <div id="wrapper">
+          <!-- Sidebar -->
+          <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav nav-tabs" id="sidebar-nav" style="top:20px">
+              <li class="active"> <a href="#dashboard">Account Information</a> </li>
+              <li> <a href="#tab1">Account Balance</a> </li>
+              <li> <a href="#tab2">Membership</a> </li>
+              <li> <a href="#tab3">Member</a> </li>
+              <li> <a href="#tab4">Subscribe</a> </li>
+              <li> <a href="#tab5">Pass</a> </li>
+            </ul>
+          </div>
+          <!-- /#sidebar-wrapper -->
+          <!-- Page Content -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="dashboard">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="display:inline-block; padding:10px;margin-top:20px;vertical-align:top"> <img class="img-thumbnail" style="margin-right: 30px; max-width: 90px;" src="./dash_files/24625.jpg">
+                      <div>
+                        <h5>Join Us On Facebook</h5>
+                        <div class="fb-like fb_iframe_widget" data-ref="dash-platform" data-colorscheme="light" data-layout="button" data-action="like" data-show-faces="true" data-share="true" data-href="https://www.facebook.com/arenasports" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=328419437305840&amp;color_scheme=light&amp;container_width=360&amp;href=https%3A%2F%2Fwww.facebook.com%2Farenasports&amp;layout=button&amp;locale=en_US&amp;ref=dash-platform&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 96px; height: 20px;">
+                          <iframe name="f3d870b43760edc" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./dash_files/like.html" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe>
+                          </span></div>
+                      </div>
+                    </div>
+                    <div style="display:inline-block; padding-bottom:10px;vertical-align:top;font-size:18px; ">
+                      <div style="xline-height:2;">
+                        <h3>Anthony Tippett <small style="margin-left: 20px; color: #000;">123</small></h3>
+                      </div>
+                      <div style="font-size:14px">15710 249th Ave Se<br>
+                        Issaquah, WA 98027<br>
+                        Day Phone: (425) 443-3152<br>
+                        Email: <a href="mailto:atippett@gmail.com">atippett@gmail.com</a><br>
+                        <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=user_edit&amp;company=arenasports">Update Information</a><br>
+                        <br>
+                        <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=benefits&amp;company=arenasports" class="btn btn-sm btn-small btn-info">See Member Benefits</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div>
+                      <h3>Memberships</h3>
+                      <div style="margin:0px; padding-bottom: 10px;"> Family Membership <span style="color:red; font-weight:bold; padding-left:5px "> Expires:
+                        Mar 18, 2020</span> <br>
+                        <br>
+                        <a class="btn btn-default btn-sm btn-small" href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home/index&amp;company=arenasports&amp;sitcart_action=add&amp;sitcart_prod=3178&amp;sitcart_customer=24625&amp;sitcart_memid=59320">Renew</a>
+                        <script type="text/javascript">
   <!--
   var buyMembershipID = null;
   var buyMembershipCustomerID = null;
@@ -1310,280 +1262,307 @@ body {
   }
   //-->
   </script>
-            <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#membershipModal" role="button" class="btn btn-default btn-sm" data-toggle="modal">Purchase Membership!</a>
-            <style>
+                        <a href="https://apps.dashplatform.com/beta/dash/index.php?action=Home/index&amp;company=arenasports#membershipModal" role="button" class="btn btn-default btn-sm" data-toggle="modal">Purchase Membership!</a>
+                        <style>
 #buyMembershipDIV .well { margin: 10px 0 0 0; }
 </style>
-            <div class="modal fade" id="membershipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">X</button>
-                    <h3 id="myModalLabel">Select a Membership</h3>
-                  </div>
-                  <div class="modal-body">
-                    <div class="header" style="padding-bottom: 10px">Select Membership To Purchase</div>
-                    <form>
-                      <div id="buyMembershipDIV">
-                        <input type="radio" id="buyMembershipID" name="buyMembershipID" value="1060">
-                        Arena Sports Standard Membership <br>
-                        $57.00            1      
-                        Year(s) <br>
-                        <br>
-                        <input type="radio" id="buyMembershipID" name="buyMembershipID" value="3178">
-                        Family Membership <br>
-                        $114.00            1      
-                        Year(s)
-                        
-                        Family <br>
-                        <br>
-                        <input type="radio" id="buyMembershipID" name="buyMembershipID" value="3842">
-                        LAX Drop In 1 Night Membership <br>
-                        $5.00            3      
-                        Day(s) <br>
-                        <br>
-                        <input type="radio" id="buyMembershipID" name="buyMembershipID" value="2136">
-                        Lil Kickers Annual Membership <br>
-                        $57.00            1      
-                        Year(s) <br>
-                        <br>
+                        <div class="modal fade" id="membershipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">X</button>
+                                <h3 id="myModalLabel">Select a Membership</h3>
+                              </div>
+                              <div class="modal-body">
+                                <div class="header" style="padding-bottom: 10px">Select Membership To Purchase</div>
+                                <form>
+                                  <div id="buyMembershipDIV">
+                                    <input type="radio" id="buyMembershipID" name="buyMembershipID" value="1060">
+                                    Arena Sports Standard Membership <br>
+                                    $57.00            1      
+                                    Year(s) <br>
+                                    <br>
+                                    <input type="radio" id="buyMembershipID" name="buyMembershipID" value="3178">
+                                    Family Membership <br>
+                                    $114.00            1      
+                                    Year(s)
+                                    
+                                    Family <br>
+                                    <br>
+                                    <input type="radio" id="buyMembershipID" name="buyMembershipID" value="3842">
+                                    LAX Drop In 1 Night Membership <br>
+                                    $5.00            3      
+                                    Day(s) <br>
+                                    <br>
+                                    <input type="radio" id="buyMembershipID" name="buyMembershipID" value="2136">
+                                    Lil Kickers Annual Membership <br>
+                                    $57.00            1      
+                                    Year(s) <br>
+                                    <br>
+                                  </div>
+                                  <div style="display: none" id="buyMembershipCustomerDIV">
+                                    <div style="font-weight: bold">Who are you purchasing the membership for?</div>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="24625">
+                                    Anthony <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="24626">
+                                    Maria <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="66223">
+                                    Elliot <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="117737">
+                                    Wyatt <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255688">
+                                    aw <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255689">
+                                    Aden <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255690">
+                                    Boo <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="301958">
+                                    todd <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="334390">
+                                    Newwwer <br>
+                                    <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="412723">
+                                    Ne <br>
+                                    <br>
+                                    <input type="button" id="buyMembershipButton" value="Add To Cart">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div style="display: none" id="buyMembershipCustomerDIV">
-                        <div style="font-weight: bold">Who are you purchasing the membership for?</div>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="24625">
-                        Anthony <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="24626">
-                        Maria <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="66223">
-                        Elliot <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="117737">
-                        Wyatt <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255688">
-                        aw <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255689">
-                        Aden <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="255690">
-                        Boo <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="301958">
-                        todd <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="334390">
-                        Newwwer <br>
-                        <input type="radio" id="buyMembershipCustomerID" name="buyMembershipCustomerID" value="412723">
-                        Ne <br>
-                        <br>
-                        <input type="button" id="buyMembershipButton" value="Add To Cart">
+                      <br>
+                    </div>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab1">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="padding-left:10px">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td><h3> Account Balance <a href="https://apps.dashplatform.com/beta/dash/index.php?action=invoices">$10.24</a></h3></td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Anthony</td>
+                            <td class="numeric">$10.24</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Elliot</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Wyatt</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">aw</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Aden</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Boo</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">todd</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Newwwer</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left: 20px; padding-bottom:10px">Ne</td>
+                            <td class="numeric">$0.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <input class="btn btn-default btn-sm btn-small" type="button" name="payBalanceButton" value="Pay Balance" onClick="location.href=&#39;?action=invoices&#39;">
+                      <br>
+                    </div>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="padding-left:10px">
+                      <div style="vertical-align: bottom">
+                        <h3>Anthony</h3>
                       </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                      <div style="padding-left: 0px; margin-bottom: 5px;">
+                        <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
+                          <div style="font-weight: bold"> Team Hello Newman (ISS) - C
+                            <div style="float: right"> Starting Oct 16th, 2016 </div>
+                          </div>
+                          Season Soccer, Adult League Winter 1 2016 <br>
+                          <br>
+                          <label>Team Owes</label>
+                          $0.00 <br class="clear">
+                          <label>Paid</label>
+                          $0.00 <br>
+                          <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=message/index/113644"><span>Message </span></a><a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=24625&amp;teamid=113644">Team</a> </div>
+                          <br class="clear">
+                        </div>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Elliot</h3>
+                      </div>
+                      <div style="padding-left: 0px; margin-bottom: 5px;">
+                        <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
+                          <div style="font-weight: bold"> Camp Summer Camp 2015 (Full Day)
+                            <div style="float: right"> Starting Jun 18th, 2015 </div>
+                          </div>
+                          Season Summer Camp 2015 <br>
+                          <br>
+                          <div class="form-group">
+                            <label>Due</label>
+                            $0.00 </div>
+                          <br>
+                          <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=66223&amp;teamid=95101">Camp</a> </div>
+                          <br class="clear">
+                        </div>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Wyatt</h3>
+                      </div>
+                      <div style="padding-left: 0px; margin-bottom: 5px;">
+                        <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
+                          <div style="font-weight: bold"> Class Hoppers (3/4) Wed 4:00p B
+                            <div style="float: right"> Starting Sep 7th, 2016 </div>
+                          </div>
+                          Season Lil' Kickers Sep - Nov 2016 <br>
+                          <br>
+                          <div class="form-group">
+                            <label>Due</label>
+                            $204.00 <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home/index&amp;company=arenasports&amp;sitcart_action=add&amp;sitcart_team=111606&amp;sitcart_customer=117737">Add To Cart</a><br>
+                            <small><i>(Might be pro-rated inside your Shopping Cart)</i></small> </div>
+                          <br>
+                          <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=117737&amp;teamid=111606">Class</a> </div>
+                          <br class="clear">
+                        </div>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>aw</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Aden</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Boo</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>todd</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Newwwer</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <div style="vertical-align: bottom">
+                        <h3>Ne</h3>
+                      </div>
+                      <!-- Escaped in function below -->
+                      <div style="text-align: right"> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
+                      <a id="addChildButton" href="javascript:void(0);" class="btn btn-default">Add Family Member</a> </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <br>
-        </div>
-        <br>
-        <br>
-      </div>
-      <div>
-        <div>
-          <p>
-            <!--vertical Tabs-->
-          <div id="ChildVerticalTab_1">
-            <ul class="resp-tabs-list ver_1">
-              <li>Anthony</li>
-              <li>Elliot</li>
-              <li>Wyatt</li>
-              <li>aw</li>
-              <li>Aden</li>
-              <li>Boo</li>
-              <li>todd</li>
-              <li>Newwwer</li>
-              <li>Ne</li>
-            </ul>
-            <div class="resp-tabs-container ver_1">
-              <div>
-                <div>
-                  <h4>Anthony</h4>
-                </div>
-                <div style="padding-left: 0px; margin-bottom: 5px;">
-                  <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
-                    <div style="font-weight: bold"> Team Hello Newman (ISS) - C
-                      <div style="float: right"> Starting Oct 16th, 2016 </div>
-                    </div>
-                    Season Soccer, Adult League Winter 1 2016 <br>
+            <div class="tab-pane" id="tab4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="padding-left:10px">
+                      <h3>Subscribe To Your Calendar</h3>
+                      <a class="btn btn-info btn-sm" href="webcal://sportsix.sports-it.com/ical?cid=arenasports&amp;id=24625&amp;k=edf5344746876114b61eaee7652037c5" target="_blank">Subscribe</a> <a class="btn btn-info btn-sm" href="http://www.google.com/calendar/render?cid=webcal%3A%2F%2Fsportsix.sports-it.com%2Fical%3Fcid%3Darenasports%26id%3D24625%26k%3Dedf5344746876114b61eaee7652037c5" target="_blank">Add To Google</a> <a class="btn btn-default btn-sm btn-small" href="https://apps.dashplatform.com/beta/dash/index.php?action=icalHelp">Help</a> </div>
                     <br>
-                    <label>Team Owes</label>
-                    $0.00 <br class="clear">
-                    <label>Paid</label>
-                    $0.00 <br>
-                    <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=message/index/113644"><span>Message </span></a><a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=24625&amp;teamid=113644">Team</a> </div>
-                    <br class="clear">
-                  </div>
-                </div>
-                <!-- Escaped in function below -->
-                <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-              </div>
-              <div>
-                <div>
-                  <h4>Elliot</h4>
-                </div>
-                <div style="padding-left: 0px; margin-bottom: 5px;">
-                  <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
-                    <div style="font-weight: bold"> Camp Summer Camp 2015 (Full Day)
-                      <div style="float: right"> Starting Jun 18th, 2015 </div>
-                    </div>
-                    Season Summer Camp 2015 <br>
                     <br>
-                    <div class="form-group">
-                      <label>Due</label>
-                      $0.00 </div>
-                    <br>
-                    <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=66223&amp;teamid=95101">Camp</a> </div>
-                    <br class="clear">
                   </div>
-                </div>
-                <!-- Escaped in function below -->
-                <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-              </div>
-              <div>
-                <div>
-                  <h4>Wyatt</h4>
-                </div>
-                <div style="padding-left: 0px; margin-bottom: 5px;">
-                  <div style="padding: 10px; background-color: #f7f7f9; -moz-border-radius: 4px; -webkit-border-radius: 4px;">
-                    <div style="font-weight: bold"> Class Hoppers (3/4) Wed 4:00p B
-                      <div style="float: right"> Starting Sep 7th, 2016 </div>
-                    </div>
-                    Season Lil' Kickers Sep - Nov 2016 <br>
-                    <br>
-                    <div class="form-group">
-                      <label>Due</label>
-                      $204.00 <a href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home/index&amp;company=arenasports&amp;sitcart_action=add&amp;sitcart_team=111606&amp;sitcart_customer=117737">Add To Cart</a><br>
-                      <small><i>(Might be pro-rated inside your Shopping Cart)</i></small> </div>
-                    <br>
-                    <div class="btn-group"> <a class="btn btn-sm btn-default" href="https://apps.dashplatform.com/beta/dash/index.php?action=team&amp;customerID=117737&amp;teamid=111606">Class</a> </div>
-                    <br class="clear">
-                  </div>
-                </div>
-                <!-- Escaped in function below -->
-                <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>aw</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>Aden</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>Boo</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>todd</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>Newwwer</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <div>
-                    <h4>Ne</h4>
-                  </div>
-                  <!-- Escaped in function below -->
-                  <div style="text-align: right"> <a class="btn btn-info btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=Home&amp;past=1">Show More</a> <a class="btn btn-default btn-sm" href="https://apps.dashplatform.com/beta/dash/index.php?action=signupSwitch">Register</a> </div>
                 </div>
               </div>
             </div>
-          </div>
-          </p>
-        </div>
-        <div><a id="addChildButton" href="javascript:void(0);" class="btn btn-default">Add Family Member</a> </div>
-      </div>
-      <div>
-        <div>
-          <h4>Subscribe To Your Calendar</h4>
-          <a class="btn btn-info btn-sm" href="webcal://sportsix.sports-it.com/ical?cid=arenasports&amp;id=24625&amp;k=edf5344746876114b61eaee7652037c5" target="_blank">Subscribe</a> <a class="btn btn-info btn-sm" href="http://www.google.com/calendar/render?cid=webcal%3A%2F%2Fsportsix.sports-it.com%2Fical%3Fcid%3Darenasports%26id%3D24625%26k%3Dedf5344746876114b61eaee7652037c5" target="_blank">Add To Google</a> <a class="btn btn-default btn-sm btn-small" href="https://apps.dashplatform.com/beta/dash/index.php?action=icalHelp">Help</a> </div>
-        <br>
-        <br>
-      </div>
-      <div>
-        <div>
-          <h4>Passes</h4>
-          <div class="pull-left">
-            <button type="button" data-toggle="modal" data-target="#new-pass" class="btn btn-sm btn-default">New</button>
-            <!-- need to allow purchase of new punch card -->
-          </div>
-          <br class="clearfix">
-          <div id="new-pass" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title">Purchase a Pass</h4>
-                </div>
-                <div class="modal-body">
-                  <table class="table table-striped">
-                    <tbody>
-                      <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Units</th>
-                        <th>Discount</th>
-                        <th>Discount Type</th>
-                        <th>Valid For</th>
-                      </tr>
-                      <tr>
-                        <td><a class="purchasePass" href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home&amp;company=arenasports&amp;CustomerID=24625&amp;sitcart_action=add&amp;sitcart_passtype=9&amp;sitcart_customer=24625"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>
-                        <td>Skills Institute Adult Clinic Pass</td>
-                        <td><select class="quantitySelect">
-                            <option value="8">8</option>
-                          </select></td>
-                        <td>1.00</td>
-                        <td>$</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
-          <script>
+            <div class="tab-pane" id="tab5">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="padding-left:10px">
+                      <h3>Passes</h3>
+                      <div class="pull-left">
+                        <button type="button" data-toggle="modal" data-target="#new-pass" class="btn btn-sm btn-default">New</button>
+                        <!-- need to allow purchase of new punch card -->
+                      </div>
+                      <br class="clearfix">
+                      <div id="new-pass" class="modal fade">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                              <h4 class="modal-title">Purchase a Pass</h4>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Units</th>
+                                    <th>Discount</th>
+                                    <th>Discount Type</th>
+                                    <th>Valid For</th>
+                                  </tr>
+                                  <tr>
+                                    <td><a class="purchasePass" href="https://apps.dashplatform.com/beta/dash/index.php?Action=Home&amp;company=arenasports&amp;CustomerID=24625&amp;sitcart_action=add&amp;sitcart_passtype=9&amp;sitcart_customer=24625"><span class="glyphicon glyphicon-shopping-cart"></span></a></td>
+                                    <td>Skills Institute Adult Clinic Pass</td>
+                                    <td><select class="quantitySelect">
+                                        <option value="8">8</option>
+                                      </select></td>
+                                    <td>1.00</td>
+                                    <td>$</td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                      </div>
+                      <!-- /.modal -->
+                      <script>
   $j('.purchasePass').click(function(e){
     e.preventDefault();
     // Get the quantity
@@ -1592,47 +1571,38 @@ body {
     SITGoLocation(href);
   });
 </script>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <br>
-        <br>
       </div>
+      <!-- /#wrapper -->
+      <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!-- Menu Toggle Script -->
+      <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $('#sidebar-nav a').click(function (e) {
+  		e.preventDefault()
+  		$(this).tab('show')
+	})
+    </script>
+      <!--     -->
     </div>
   </div>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
 </div>
-<!--Plug-in Initialisation-->
-<script type="text/javascript">
-    $(document).ready(function() {
-        //Horizontal Tab
-        $('#parentHorizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-				if($(window).width()>'768')
-					$(".resp-vtabs .resp-tabs-container").height($(this).height()+ ($(".resp-tabs-list li").length * 31));
-            }
-        });
-
-        // Child Tab
-        $('#ChildVerticalTab_1').easyResponsiveTabs({
-            type: 'vertical',
-            width: 'auto',
-            fit: true,
-            tabidentify: 'ver_1', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
-    });
-</script>
-<!-- footer-->
+</div>
+<!-- Footer -->
 <div id="footerWindow" class="text-muted"> Call (425) 885-4881 or <a href="https://apps.dashplatform.com/beta/dash/index.php?action=support">email us</a> © 2017 <a href="http://www.dashplatform.com/">DASH Platform</a>. </div>
 <div id="windowNotice">
   <div class="alert alert-info" style="margin-left: auto; margin-right: auto; width:60%"></div>
